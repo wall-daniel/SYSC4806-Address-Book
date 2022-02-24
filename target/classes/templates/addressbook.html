@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Address Books</h1>
+
+<p th:text="'ID ' + ${addressBook.id}"></p>
+<p th:text="'Size ' + ${addressBook.getSize()}"></p>
+
+<table>
+    <thead>
+    <tr>
+        <th> Name </th>
+        <th> Number </th>
+        <th> ID </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="buddy : ${addressBook.buddies}">
+        <td><span th:text="${buddy.name}"></span></td>
+        <td><span th:text="${buddy.number}"> </span></td>
+        <td><span th:text="${buddy.id}"> </span></td>
+        <td><a th:href="'/addresses/' + ${addressBook.id} + '/buddy/' + ${buddy.id}" th:text="'link to buddy'">  </a></td>
+    </tr>
+    </tbody>
+</table>
+
+<br>
+<a th:href="'/addresses/' + ${addressBook.id} + '/buddy/new'">Add new buddy</a>
+<br>
+<a href="/addresses/">Link to all address books</a>
+</body>
+</html>
