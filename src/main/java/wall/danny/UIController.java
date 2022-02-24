@@ -54,14 +54,14 @@ public class UIController {
 
     @RequestMapping(method = RequestMethod.GET, path = "/addresses/{id}")
     public String getAddress(@PathVariable long id, Model model) {
-        model.addAttribute("addressBook", addressBookRepository.findById(id).orElseThrow());
+        model.addAttribute("addressBook", addressBookRepository.findById(id).orElseThrow(() -> new RuntimeException("Bad address book id?")));
 
         return "addressbook";
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/addresses/{addressId}/buddy/{buddyId}")
     public String getAddress(@PathVariable long addressId, @PathVariable long buddyId, Model model) {
-        BuddyInfo buddyInfo = buddyRepository.findById(buddyId).orElseThrow();
+        BuddyInfo buddyInfo = buddyRepository.findById(buddyId).orElseThrow(() -> new RuntimeException("Bad buddy id?"));
 
         // Make sure the buddy has the correct address book
         if (buddyInfo.getAddressBook().getId() != addressId) {

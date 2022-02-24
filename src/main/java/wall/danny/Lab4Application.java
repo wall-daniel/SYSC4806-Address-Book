@@ -39,7 +39,7 @@ public class Lab4Application {
             log.info("");
 
             // fetch an individual customer by ID
-            AddressBook a1 = repository.findById(1L).orElseThrow();
+            AddressBook a1 = repository.findById(1L).orElseThrow(() -> new RuntimeException("Bad?"));
             log.info("BuddyInfo found with findById(1L):");
             log.info("--------------------------------");
             log.info(a1.toString());
