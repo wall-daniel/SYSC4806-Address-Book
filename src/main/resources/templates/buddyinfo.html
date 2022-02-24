@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Buddy info</h1>
+
+    <p th:text="'Name ' + ${buddy.name}"></p>
+    <p th:text="'Number ' + ${buddy.number}"></p>
+    <p th:text="'ID ' + ${buddy.id}"></p>
+
+    <a th:href="'/addresses/' + ${buddy.addressBook.id}">Link to address book</a>
+
+</body>
+</html>

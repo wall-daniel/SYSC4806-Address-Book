@@ -1,0 +1,41 @@
+{
+  "id": 1,
+  "size": 7,
+  "buddies": [
+    {
+      "id": 2,
+      "name": "Jack",
+      "number": "6138096755"
+    },
+    {
+      "id": 3,
+      "name": "Chloe",
+      "number": "6138096756"
+    },
+    {
+      "id": 4,
+      "name": "Kim",
+      "number": "6138096757"
+    },
+    {
+      "id": 5,
+      "name": "David",
+      "number": "6138092347"
+    },
+    {
+      "id": 6,
+      "name": "Michelle",
+      "number": "6138311083"
+    },
+    {
+      "id": 7,
+      "name": "Danny",
+      "number": "6138096777"
+    },
+    {
+      "id": 8,
+      "name": "Danny",
+      "number": "6138096777"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>AddressBooks JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="addressbooks.js"></script>
+    <link rel="stylesheet" href="stylesheet.css" />
+</head>
+<body>
+<p>Find your address book here: <a href="/addresses">here</a></p>
+
+<div class="flex-container">
+    <div class="flex-row">
+        <div class="flex-item" id="address-book-list">
+            <h1>Address Book List</h1>
+            <table>
+                <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> ID </th>
+                    <th> Size </th>
+                    <th> Link </th>
+                </tr>
+                </thead>
+                <tbody id="address-books-table">
+                </tbody>
+            </table>
+        </div>
+        <div class="flex-item" id="address-book-details">
+            <h1>Address Book Details</h1>
+            <table>
+                <thead>
+                <tr>
+                    <th> Name </th>
+                    <th> Number </th>
+                    <th> ID </th>
+                </tr>
+                </thead>
+                <tbody id="buddy-info-table">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="flex-row">
+        <div class="flex-item" id="new-address-book" th:insert="new_addressbook.html :: new-address-book-form"></div>
+        <div class="flex-item" id="new-buddy" th:insert="new_buddyinfo.html :: new-buddy-form"></div>
+    </div>
+</div>
+</body>
+</html>

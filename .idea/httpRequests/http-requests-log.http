@@ -1,0 +1,145 @@
+POST http://localhost:8080/addressbooks
+Content-Type: application/json
+
+{
+  "name": "myself"
+}
+
+<> 2022-02-15T111004.200.json
+
+###
+
+POST http://localhost:8080/addressbooks
+Content-Type: application/json
+
+{
+  "name": "myself"
+}
+
+<> 2022-02-15T110915.200.json
+
+###
+
+POST http://localhost:8080/addressbooks
+Content-Type: application/json
+
+{
+  "name": "myself"
+}
+
+<> 2022-02-15T110912.200.json
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/5
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/5
+
+<> 2022-02-09T174237.500.json
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/5
+
+<> 2022-02-09T174150.500.json
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/5
+
+<> 2022-02-09T174128.500.json
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/6
+
+<> 2022-02-09T174115.500.json
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/6
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/6
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/6
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/6
+
+###
+
+DELETE http://localhost:8080/addressbooks/1/buddies/8
+
+<> 2022-02-09T173652.500.json
+
+###
+
+POST http://localhost:8080/addressbooks/1/buddies
+Content-Type: application/json
+
+{
+  "name": "Danny",
+  "number": "6138096777"
+}
+
+<> 2022-02-09T173149.200.json
+
+###
+
+POST http://localhost:8080/addressbooks/1/buddies
+Content-Type: application/json
+
+{
+  "name": "Danny",
+  "number": "6138096777"
+}
+
+<> 2022-02-09T173137.200.json
+
+###
+
+POST http://localhost:8080/buddies
+Content-Type: application/json
+
+{
+  "name": "Danny",
+  "number": "6138096777"
+}
+
+<> 2022-02-09T172702.500.json
+
+###
+
+POST http://localhost:8080/buddies
+Content-Type: application/json
+
+{
+  "name": "Danny",
+  "number": "6138096777"
+}
+
+<> 2022-02-09T172518.500.json
+
+###
+
+POST http://localhost:8080/buddies
+
+<> 2022-02-09T172407.400.json
+
+###
+
+GET http://localhost:8080/addressbooks/
+
+###
+
+GET http://localhost:8080/addressbooks/
+
+###
+
